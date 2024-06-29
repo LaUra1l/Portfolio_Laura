@@ -33,7 +33,7 @@ html{
 }
 body{
     background-color: var(--color1);
-    overflow-x: hidden;
+ 
  
     .background{
         position: relative;
