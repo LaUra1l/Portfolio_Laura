@@ -28,18 +28,6 @@ blockImmute.id="immute";
 
 const blockImmute2=document.createElement('div');
 blockImmute2.id="immute2";
- 
-
-
-const menyWithLigue=document.querySelector("#menyWithLigue");
-
-
-
-
-
-
-
-
 
 let setElement=0;
 let howMenyElement=0;
@@ -284,39 +272,8 @@ function changeturn(){
     }
 
 }
-let go=false;
-
-const canMove=()=>{
-    go=!go;
-    menyWithLigue.style.opacity="0.9";
-
-}
-const stopMove=()=>{
-    go=!go;
-    menyWithLigue.style.opacity="1";
-}
-
-const move=(e)=>{
-   if(go){
-    console.log("ruszam");
-
-    console.log(e.clientX);
-    console.log(e.clientY);
-    menyWithLigue.style.left=e.clientX+"px";
-    menyWithLigue.style.top=e.clientY+"px";
-   }
-
-
-}
-
 
 
 cuadrados.forEach(cuadrado=>cuadrado.addEventListener('click',put));
 btnChange.addEventListener('click',changeturn);
 
-
-
-
-menyWithLigue.addEventListener('mousemove',move);
-menyWithLigue.addEventListener('mousedown',canMove);
-menyWithLigue.addEventListener('mouseup',stopMove);
