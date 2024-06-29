@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOD MORSA- tłumacz</title>
+    <link rel="stylesheet" href="../style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="icon" type="image/png" href="../img/logo-kod_morsa.svg">
+</head>
+<body>
+
+    <div class="contener">
+        <ul class="nav">
+            <a href="../index.html"><li><i class="fa-solid fa-otter logo"></i></li></a>
+            <li><p>NAUCZ SIĘ KODU MORSA!</p></li>
+            <li><i class="fa-solid fa-gears settings"></i></li>
+         
+        </ul>
+        <div class="contener_settings">
+           <ul>
+            <li><a href="history.html">Czym jest kod morse'a?</a></li>
+            <li><a href="statute.html">Jak to działa?</a></li>
+            <li><a href="../index.html">Stwórz swój słownik!</a></li>
+            <li><a href="dictionary.html">Słownik</a></li>
+           </ul>
+        </div>
+
+      <h1>TŁUMACZ KODU MORSE'A <i class="fa-solid fa-ship ship"></i></h1>
+      <hr> 
+
+      <div class="translator_contener">
+        <button class="audio_btn"><i class="fa-solid fa-play play"></i></button>
+        <i class="fa-solid fa-book reglas"></i>
+        <div class="legend">
+            <b>LEGENDA</b>
+            <br>
+            <sub><i class="fa-solid fa-circle circle"></i> -> krótki sygnał</sub>
+            <br>
+            <sub><i class="fa-solid fa-minus line"></i> -> długi sygnał</sub>
+            <br>
+            <sub><i class="fa-solid fa-minus line-rotated"></i> -> oddzielenie litery</sub>
+            <br>
+            <sub><i class="fa-solid fa-x line"></i> -> oddzielenie wyrazu</sub>
+            <p>--------------------</p>
+            <b>ZASADY PISOWNI</b>
+            <br>
+            <sub>-> Po każdej literce napisanej w <span class="unique">kodzie morse'a</span> należy dodać <span class="unique">"/"</span></sub>
+            <br>
+            
+        </div>
+        
+        <sub>POLSKI <i class="fa-solid fa-arrow-right arrow_translate"></i> KOD MORSE'A</sub>
+        <br>
+        <input class="translator_input" type="text" placeholder="wpisz...">
+        <div class="translator_mors">
+            <div class="square_circle option">
+                <i class="fa-solid fa-circle circle"></i>
+            </div>
+
+            <div class="square_line option">
+                <i class="fa-solid fa-minus line"></i>
+            </div>
+
+            <div class="square_letterSpace option">
+                <i class="fa-solid fa-minus line-rotated line"></i>
+            </div>
+
+            <div class="square_wordSpace option">
+                <i class="fa-solid fa-x line"></i>
+            </div>
+
+            <div class="delate option">
+                <i class="fa-solid fa-delete-left"></i>
+            </div>
+        </div>
+
+        <br>
+        <hr>
+
+        <div class="transition">
+            <p class="transition_place"></p>
+
+            <br>
+            
+            <p class="transition_letters_place"></p>
+        </div>
+        
+      </div>
+      
+        
+
+    </div>
+
+
+    <script  src="../js/script.js"></script>
+    
+</body>
+</html>

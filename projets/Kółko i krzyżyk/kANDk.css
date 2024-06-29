@@ -1,0 +1,267 @@
+html{
+    background-color: rgb(211, 249, 218);
+}
+
+body{
+    width: 500px;
+    height: 500px;
+    margin: 70px auto;
+    background-color: rgb(111, 170, 144);
+    border-radius: 30px;
+    border: 3px solid rgb(4, 88, 51);
+}
+#game{
+
+/* margin: 100px; */
+padding: 30px ;
+}
+#first{
+    display: flex;
+    margin: 6px;
+
+
+}
+.cuadrado{
+    margin: 6px;
+    width: 70px;
+    height: 70px;
+    background-color: rgb(8, 107, 64);
+    border: white 1px solid;
+ 
+}
+.krzyzyk{
+    margin: 10px;
+    position: absolute;
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    background-color: white ;
+    width: 50px;
+    height: 50px;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+.kolko{
+    clip-path: circle(50% at 50% 50%);
+    margin: 10px;
+    position: absolute;
+    background-color: white ;
+    width: 50px;
+    height: 50px;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+h2{
+    padding-top:40px;
+    padding-left: 40px;
+    color: rgb(215, 242, 208);
+    position: relative;
+}
+
+#result{
+    /* position: relative; */
+    background-color: rgb(161, 227, 186);
+    width: 300px;
+    height: 197px;
+    /* left: 270px;
+    bottom: 227px; */
+    /* margin: 60px; */
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    opacity: 0.9;
+    box-shadow: 5px 5px 10px white;
+    text-align: center;
+    padding: 6px;
+}
+#result b{
+    font-size: 25px;
+    color: rgb(17, 102, 2);
+}
+#result p{
+    font-size: 16px;
+    color: rgb(27, 35, 30);
+}
+.h3{
+    padding-left: 40px;
+}
+#listOfResults{
+    /* margin: 12px; */
+    padding: 12px;
+    position: relative;
+    background-color: rgb(157, 188, 165);
+    width: 101px;
+    height: 195px;
+    left: 353px;
+    bottom: 366px;
+    border: 2px solid  rgb(8, 107, 64);
+    color:  rgb(8, 107, 64);
+}
+#listOfResults b{
+    margin: 12px;
+    text-align: center;
+}
+#listOfResults p{
+    color:  rgb(5, 62, 38);
+    font-size: 13px;
+
+}
+.line{
+    width: 50%;
+    height: 0.5px;
+    background-color: aliceblue;
+}
+.lineNew{
+    margin: 12px;
+    width: 80%;
+    height: 1px;
+    background-color:rgb(8, 107, 64);
+}
+
+#change{
+    position: relative;
+    background-color: rgb(152, 193, 121);
+    border: 2px solid rgb(8, 107, 64);
+    left: 353px;
+    bottom: 366px;
+    bottom: 410px;
+    color: rgb(8, 107, 64);
+
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    
+}
+
+#immute{
+    position: absolute;
+    top: 41%;
+    left: 41%;
+    transform: translate(-41%,-41%);
+    width: 100%;
+    height: 100%;
+
+    background-color: rgb(135, 32, 32);
+    opacity: 0;
+}
+
+/* #immute2{
+    position: absolute;
+    top: 20%;
+    left: 63%;
+    transform: translate(-43%,-20%);
+    width: 220px;
+    height: 140px;
+
+    /* background-color: rgb(135, 32, 32); */
+    /* opacity: 0; */
+/* } */ 
+
+#menyWithLigue{
+   position: absolute;
+   top: 20%;
+   left: 23%;
+   transform: translate(-20%,-23%);
+    width: 210px;
+    height: 260px;
+    background-color: rgb(8, 107, 64);
+    border-radius: 8px;
+    padding: 10px;
+    border: 3px white solid;
+}
+#menyWithLigue h4{
+    text-align: center;
+    color: rgb(249, 220, 220);
+    
+}
+
+#menyWithLigue p{
+    margin-left: 7px;
+    font-size: 13px;
+    color: rgb(230, 191, 191); ;
+}
+.gold{
+    
+    animation-duration: 3s;
+    animation-name: turboGOLD ;
+    animation-iteration-count: infinite;
+    
+}
+i{
+    color: rgb(159, 159, 159);
+}
+/* 
+#liga{
+    margin-left: 70%;
+    /* margin-top: 300px; */
+    /* padding: 30px;
+    color: black;
+}  */
+@keyframes rotate{
+    to{
+        background-color:  rgb(152, 193, 121);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes disappear{
+    0%{
+
+    }
+    50%{
+        transform: translateX(40px);
+    }
+    100%{
+        transform: translate(40px,70px);
+        
+
+    }
+}
+
+@keyframes disappearReversed{
+    0%{
+        transform: translate(40px,70px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translate(0);
+        
+
+    }
+}
+@keyframes turboGOLD{
+    0%{
+        color: rgb(181, 123, 29);
+    }
+    20%{
+        color: rgb(56, 212, 218);
+    }
+    30%{
+        color: rgb(134, 26, 156);
+    }
+    60%{
+        color: rgb(143, 221, 25);
+    }
+    80%{
+        color: rgb(214, 103, 216);
+    }
+    100%{
+        color: rgb(255, 4, 0);
+    }
+}
+
+/* case 2: numberOfGames.style.color=" rgb(67, 126, 40)";
+case 4: numberOfGames.style.color=" rgb(148, 138, 43)";
+case 7: numberOfGames.style.color=" rgb(190, 130, 52)";
+case 10: numberOfGames.style.color=" rgb(190, 130, 52)";
+case 15: numberOfGames.style.color="  rgb(135, 32, 32)"; */
+
+h1{
+    color:rgb(38, 31, 170) ;
+    color:rgb(82, 190, 52) ;
+    color:rgb(190, 175, 46) ;
+    color:rgb(201, 90, 26) ;
+    color:rgb(214, 16, 16) ;
+}

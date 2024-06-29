@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="contener">
+        <div class="headline">
+            <h1>LA BIBLIOTECA</h1>
+            <hr class="hr1">
+        </div>
+
+        <div class="content">
+            <h2>AGREGAR EL LIBRO: </h2>
+
+            <form class="bookForm" action="">
+                <ul>
+                    <label for="titulo">El titulo: <input class="tituloInp" id="titulo" required type="text"></label>
+                    <br><br>
+
+                    <label for="author">Autor: <input class="authorInp" id="author" required type="text"></label>
+                    <br><br>
+
+                    <label for="fecha">La fecha de publicidad: <input   class="fechaInp" id="fecha" required type="date"></label>
+
+                </ul>
+                <button class="btn" type="submit"><i class="fa-solid fa-plus"></i></button>
+            </form>
+            <hr>
+
+            <h2 class="buskerTxt">BUSCA LOS LIBROS</h2>
+            <label for="buskerInp">Escribe: <input id="buskerInp" class="buskerInp" type="text"></label> <button class="buskerBtn btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+            <span class="results"></span>
+
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

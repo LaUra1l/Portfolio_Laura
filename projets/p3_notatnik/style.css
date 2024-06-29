@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root{
+    --color1:rgb(255, 245, 225);
+    --color2:rgb(255, 105, 105);
+    --color3:rgb(200, 0, 54);
+    --color4:rgb(12, 24, 68);
+    --active:rgba(167, 167, 169, 0.745);
+}
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+    .contener{
+        text-align: center;
+        margin-top: 50px;
+        width: 500px;
+        height: 84vh;
+        background-color:var(--color3);
+        border: 5px var(--color4) solid;
+        border-radius: 4px;
+        padding: 12px;
+
+        /* FONT */
+
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: medium;
+        font-style: normal;
+        /* __ */
+
+        h1{
+            color: var(--color1);
+            letter-spacing: 5px;
+            
+        }
+        h4{
+            color: var(--color1);
+        }
+        #textarea{
+            resize: none;
+            width: 350px;
+            height: 80px;
+            background-color: var(--color1);
+            color: var(--color4);
+            border: var(--color4) solid 3px;
+            border-radius: 4px;
+        }
+        .save_btn{
+            display: block;
+            margin: 20px 0 0 40px;
+            width: 200px;
+            height: 35px;
+            background-color: var(--color4);
+            color: var(--color1);
+            font-weight: bolder;
+            letter-spacing: 0.5px;
+            border: var(--color1) solid 3px;
+            border-radius: 4px;
+
+            &:active{
+                background-color: var(--active);
+            }
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        .line_dotted{
+            border: none;
+            border-top: 5px dotted var(--color4);
+        }
+
+        .tareas{
+            display: block;
+            text-align: left;
+
+            .tareas_list{
+                li{
+                   line-height: 30px;
+                }
+            }
+            .remove_btn{
+                margin: 0 0 0 20px;
+                background-color: var(--color4);
+                color: var(--color2);
+                border: 1px solid var(--color1);
+                &:active{
+                    background-color: var(--active);
+                }
+            }
+        }
+        
+    }
+}
+
