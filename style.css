@@ -12,7 +12,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
 html{
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 :root{
     --color1:rgb(4, 0, 29);
@@ -38,7 +38,7 @@ body{
     .background{
         position: relative;
         margin: 0;
-  overflow-x: hidden;
+        overflow-x: hidden !important;
         height: 100svh;
        
 
@@ -342,7 +342,7 @@ body{
         /* padding: 20px 0; */
         position: relative;
         margin: 290px 0 0 0;
-    overflow-x: hidden;
+        overflow-x: hidden !important;
         .inf{
             display: block;
             
@@ -527,7 +527,7 @@ body{
         justify-content: center;
         flex-direction: column;
         border-radius: 5px;
-
+        overflow-x: hidden !important;
        
 
         .contactContener2{
